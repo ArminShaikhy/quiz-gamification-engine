@@ -1,0 +1,14 @@
+# Ignore everything except the final build
+src/
+test/
+examples/
+node_modules/
+*.log
+*.ts
+*.tsx
+*.map
+.vscode/
+*.config.js
+tsconfig.json
+rollup.config.js
+README.md~

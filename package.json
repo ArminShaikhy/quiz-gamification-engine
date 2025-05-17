@@ -1,39 +1,31 @@
 {
   "name": "quiz-gamification-engine",
   "version": "1.0.0",
-  "description": "A lightweight JavaScript engine for building multiple-choice quiz gamification experiences.",
-  "license": "MIT",
-  "author": "Your Name",
-  "type": "module",
+  "description": "A customizable quiz gamification engine built with TypeScript.",
   "main": "dist/index.js",
-  "exports": {
-    ".": "./dist/index.js"
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "jest"
   },
   "files": [
     "dist"
   ],
-  "scripts": {
-    "build": "rollup -c",
-    "test": "echo \"No tests yet\" && exit 0"
-  },
   "keywords": [
     "quiz",
     "gamification",
-    "engine",
-    "multiple-choice",
-    "javascript",
-    "npm"
+    "typescript",
+    "engine"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/your-username/quiz-gamification-engine"
-  },
-  "bugs": {
-    "url": "https://github.com/your-username/quiz-gamification-engine/issues"
-  },
-  "homepage": "https://github.com/your-username/quiz-gamification-engine#readme",
+  "license": "MIT",
+  "type": "module",
   "devDependencies": {
-    "@rollup/plugin-node-resolve": "^15.3.1",
-    "rollup": "^4.40.2"
-  }
+    "@types/jest": "^29.5.14",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.3.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "author": "Armin Shaikhy"
 }
